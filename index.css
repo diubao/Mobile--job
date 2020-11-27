@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.clear-fix::after {
+  content: '';
+  clear: both;
+  font-size: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.box {
+  background-color: #F7F7F7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .header {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #ff8a00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .header img:nth-of-type(1) {
+  height: 0.35rem;
+  margin-left: 0.3rem;
+}
+.box .header div {
+  height: 0.35rem;
+  margin-right: -0.25rem;
+}
+.box .header div img {
+  height: 0.35rem;
+  display: block;
+  float: left;
+}
+.box .header div img:first-of-type {
+  margin-right: 0.1rem;
+}
+.box .img-list {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+.box .img-list .big-img {
+  width: 100%;
+}
+.box .img-list .big-img img {
+  width: 100%;
+}
+.box .img-list .introduce {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.14rem;
+}
+.box .img-list .introduce h3 {
+  margin: 0.1rem 0 0.1rem;
+}
+.box .img-list .introduce p:nth-of-type(1) {
+  width: 100%;
+  font-size: 0.14rem;
+  margin-bottom: 0.1rem;
+}
+.box .img-list .introduce p:nth-of-type(1) span:nth-of-type(1) {
+  font-size: 0.16rem;
+  color: #FF8A00;
+}
+.box .img-list .introduce p:nth-of-type(1) span:nth-of-type(2) {
+  float: right;
+  max-width: 0.1rem;
+}
+.box .img-list .introduce p:nth-of-type(1) span:nth-of-type(2) img {
+  height: 0.15rem;
+}
+.box .img-list .introduce p:nth-of-type(2) {
+  width: 100%;
+  font-size: 0.12rem;
+  color: #777777;
+  margin-bottom: 0.1rem;
+}
+.box .img-list .introduce p:nth-of-type(3) {
+  width: 100%;
+  font-size: 0.12rem;
+  color: blue;
+}
+.box .img-list .introduce p:nth-of-type(3) span {
+  margin: 0 0.05rem;
+  background-color: #DEE9F0;
+}
+.box .details {
+  width: 100%;
+  background-color: white;
+  margin: 0.1rem auto 0rem;
+}
+.box .details .details-list {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .details .details-list li {
+  width: 50%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #777777;
+  float: left;
+  font-size: 0.14rem;
+}
+.box .details .details-list li span:nth-of-type(1) {
+  color: #777777;
+}
+.box .details .next {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .details .next li {
+  width: 100%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #777777;
+  font-size: 0.14rem;
+}
+.box .details .next li span:nth-of-type(1) {
+  color: #777777;
+}
+.box .details .next li span:nth-of-type(2) {
+  float: right;
+  color: #777777;
+  margin-right: 0.2rem;
+}
+.box .details div {
+  float: right;
+  font-size: 0.14rem;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #777777;
+}
+.box .feature {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .feature h3 {
+  color: #FF8A00;
+  font-size: 0.16rem;
+  width: 90%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 1px solid #777777;
+}
+.box .feature div {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  width: 90%;
+  font-size: 0.14rem;
+  border-bottom: #777777 1px solid;
+}
+.box .feature p {
+  width: 100%;
+  font-size: 0.14rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+}
+.box .house-type {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .house-type h3 {
+  font-size: 0.16rem;
+  color: #FF8A00;
+  width: 90%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 1px solid #777777;
+}
+.box .house-type .type-list {
+  width: 90%;
+}
+.box .house-type .type-list li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.box .house-type .type-list li img {
+  width: 0.8rem;
+  margin-right: 0.1rem;
+  display: block;
+}
+.box .house-type .type-list li .message {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box .house-type .type-list li .message p:nth-of-type(1) {
+  font-size: 0.16rem;
+  font-weight: bold;
+}
+.box .house-type .type-list li .message p:nth-of-type(2) {
+  width: 100%;
+  font-size: 0.14rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box .house-type .type-list li .message p:last-child {
+  font-size: 0.12rem;
+  color: #777777;
+}
+.box .house-type .type-list li .message p:last-child span {
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+}
+.box .house-type .type-list li:first-child {
+  border-bottom: 1px solid #FF8A00;
+}
+.box .school {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 0.2rem;
+}
+.box .school ul {
+  width: 90%;
+}
+.box .school ul li {
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.16rem;
+  border-bottom: 1px solid #777777;
+}
+.box .school ul li h3 {
+  font-size: 0.2rem;
+}
+.box .school ul li span {
+  font-size: 0.14rem;
+  color: #777777;
+}
+.box .school p {
+  font-size: 0.16rem;
+  color: #777777;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+.box .place {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.box .place h3 {
+  font-size: 0.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 90%;
+  border-bottom: 1px solid #777777;
+}
+.box .place #container {
+  width: 90%;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  height: 1.8rem;
+}
+.box .recommend {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.box .recommend .top {
+  font-size: 0.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #777777;
+  padding-left: 0.2rem;
+}
+.box .recommend .house-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.box .recommend .house-list li {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  width: 100%;
+  border-bottom: 1px solid #777777;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box .recommend .house-list li img {
+  width: 30%;
+  margin-right: 0.1rem;
+}
+.box .recommend .house-list li .introduce {
+  width: 100%;
+}
+.box .recommend .house-list li .introduce h3 {
+  font-size: 0.18rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box .recommend .house-list li .introduce div {
+  width: 100%;
+}
+.box .recommend .house-list li .introduce div p:first-of-type {
+  font-size: 0.14rem;
+}
+.box .recommend .house-list li .introduce div p:first-of-type span {
+  font-size: 0.14rem;
+  color: #FF8A00;
+  float: right;
+  margin-right: 0.2rem;
+}
+.box .recommend .house-list li .introduce div p:last-of-type {
+  font-size: 0.13rem;
+}
+.box .recommend .house-list li .introduce div p:last-of-type span {
+  float: right;
+  margin-right: 0.2rem;
+}
+.box .recommend .house-list li .introduce > span {
+  display: block;
+  float: left;
+  margin-right: 0.1rem;
+  font-size: 0.12rem;
+}
+.box .recommend .house-list li:last-child {
+  border-bottom: none;
+}
+.box .recommend .bott {
+  border-top: 1px solid #777777;
+  font-size: 0.16rem;
+  color: #777777;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  width: 100%;
+}

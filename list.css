@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.clear-fix::after {
+  content: '';
+  clear: both;
+  font-size: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.box {
+  background-color: #F7F7F7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .header {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #ff8a00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .header img:nth-of-type(1) {
+  height: 0.3rem;
+  margin-left: 0.05rem;
+}
+.box .header div {
+  height: 0.3rem;
+  margin-right: -1rem;
+}
+.box .header div img {
+  height: 0.3rem;
+  display: block;
+  float: left;
+}
+.box .header div img:first-of-type {
+  margin-right: 0.1rem;
+}
+.box .search {
+  width: 100%;
+  height: 0.6rem;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box .search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.88rem;
+  height: 0.4rem;
+  border: 1px solid #cccccc;
+  font-size: 0.12rem;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: white;
+}
+.box .search div input {
+  padding-left: 0.05rem;
+  font-size: 0.14rem;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.box .search div img {
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-right: 0.2rem;
+  padding-left: 0.1rem;
+}
+.box .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.box .menu .title-color {
+  color: #ff8a00;
+}
+.box .menu .top {
+  width: 100%;
+  height: 0.45rem;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.box .menu .top .title-list {
+  width: 100%;
+  height: 0.25rem;
+  font-size: 0.15rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+.box .menu .top .title-list li {
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.box .menu .top .title-list li span:first-of-type {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: #939594 transparent transparent transparent;
+  top: 0.05rem;
+  position: absolute;
+}
+.box .menu .top .title-list li span:last-of-type {
+  display: none;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: transparent transparent #ff8a00 transparent;
+  top: 0.05rem;
+  position: absolute;
+}
+.box .menu .area-list {
+  position: absolute;
+  z-index: 1;
+  top: 0.45rem;
+  display: none;
+  width: 100%;
+  height: 2.55rem;
+}
+.box .menu .area-list .area-left {
+  float: left;
+  box-sizing: border-box;
+  width: 0.8rem;
+  height: 100%;
+  font-size: 0.18rem;
+  background-color: #F7F7F7;
+}
+.box .menu .area-list .area-left li {
+  height: 0.35rem;
+  width: 100%;
+  line-height: 0.35rem;
+  text-align: center;
+}
+.box .menu .area-list .area-middle {
+  float: left;
+  width: 1.2rem;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 0.12rem;
+  background-color: white;
+}
+.box .menu .area-list .area-middle li {
+  width: 100%;
+  height: 14.28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .menu .area-list .area-right {
+  float: left;
+  width: 1.2rem;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 0.12rem;
+  background-color: white;
+}
+.box .menu .area-list .area-right li {
+  width: 100%;
+  height: 14.28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .menu .price-list {
+  position: absolute;
+  top: 0.45rem;
+  z-index: 1;
+  width: 100%;
+  display: none;
+  background-color: white;
+}
+.box .menu .price-list ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.box .menu .price-list ul li {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  border-bottom: 1px solid #cccccc;
+}
+.box .menu .price-list ul li:last-child {
+  border-bottom: none;
+}
+.box .menu .type-list {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0.45rem;
+  z-index: 1;
+  display: none;
+}
+.box .menu .type-list ul {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.13rem;
+}
+.box .menu .type-list ul li {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 1px solid #cccccc;
+}
+.box .menu .type-list ul li input {
+  float: right;
+  margin-top: 0.12rem;
+  margin-right: 0.2rem;
+}
+.box .menu .type-list button {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.14rem;
+  background-color: #ff8a00;
+  border: none;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+.box .menu .more-list {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0.45rem;
+  z-index: 1;
+  display: none;
+}
+.box .menu .more-list .more-area {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #cccccc;
+}
+.box .menu .more-list .more-area h4 {
+  width: 100%;
+  height: 0.45rem;
+  margin-top: 0.1rem;
+  font-size: 0.14rem;
+  line-height: 0.45rem;
+}
+.box .menu .more-list .more-area ul {
+  width: 100%;
+}
+.box .menu .more-list .more-area ul li {
+  width: 0.6rem;
+  border: 1px solid #cccccc;
+  margin-right: 0.1rem;
+  margin-bottom: 0.15rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  text-align: center;
+  float: left;
+  font-size: 0.12rem;
+}
+.box .menu .more-list button {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.14rem;
+  background-color: #ff8a00;
+  border: none;
+  margin-bottom: 0.2rem;
+  color: white;
+}
+.box .house {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box .house ul {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .house ul li {
+  width: 100%;
+  height: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ff8a00;
+}
+.box .house ul li img {
+  height: 0.8rem;
+  margin-right: 0.1rem;
+}
+.box .house ul li .introduce {
+  width: 100%;
+  height: 0.8rem;
+}
+.box .house ul li .introduce h3 {
+  width: 100%;
+  font-size: 0.14rem;
+  margin-bottom: 0.15rem;
+}
+.box .house ul li .introduce div {
+  width: 100%;
+}
+.box .house ul li .introduce div p {
+  color: #939594;
+  font-size: 0.12rem;
+}
+.box .house ul li .introduce div p span {
+  color: #ff8a00;
+}
+.box .house ul li .introduce div p:first-child {
+  color: black;
+}
+.box .house ul li:last-child {
+  border-bottom: none;
+}
+.box .footer {
+  background-color: #2f3130;
+  width: 100%;
+  height: 2.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .footer .footer-head {
+  font-size: 0.12rem;
+  color: #939594;
+  width: 90%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border-bottom: double 1px #939594;
+}
+.box .footer .footer-middle {
+  width: 100%;
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box .footer .footer-middle div {
+  width: 30%;
+  height: 0.4rem;
+  text-align: center;
+}
+.box .footer .footer-middle div img {
+  height: 0.3rem;
+  display: block;
+  float: left;
+  opacity: 0.5;
+}
+.box .footer .footer-middle div p {
+  font-size: 0.12rem;
+  color: #939594;
+}
+.box .footer .footer-middle div:first-child {
+  margin-right: 0.2rem;
+}
+.box .footer .footer-bottom {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+.box .footer .footer-bottom p {
+  font-size: 0.08rem;
+  color: #939594;
+  margin-bottom: 0.1rem;
+}
